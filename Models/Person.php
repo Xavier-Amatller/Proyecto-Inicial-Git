@@ -7,12 +7,18 @@ namespace App\Models;
  */
 class Person
 {
+
+  public function __construct( string $name)
+  {
+      
+      $this->name = $name;
+  }
     /**
      * Person name
      *
      * @var string
      */
-    private $name;
+    protected $name;
 /**
    * age of person
    *
@@ -29,7 +35,28 @@ class Person
   {
     return $this->age;
   }
+/**
+     * Get Coach name
+     *
+     * @return  string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
 
+    /**
+     * Set Coach name in string
+     *
+     * @param  string  $name is string
+     *
+     * @return  self
+     */
+    public function setName(string $name)
+    {
+        $this->name = $name;
+        return $this;
+    }
   /**
    * Set age of person
    *
@@ -39,6 +66,7 @@ class Person
    */ 
   public function setAge(int $age)
   {
+    
       $this->age = $age;
       
       return $this;
