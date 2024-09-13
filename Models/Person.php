@@ -18,7 +18,7 @@ class Person
      *
      * @var string
      */
-    public $name;
+    protected $name;
 /**
    * age of person
    *
