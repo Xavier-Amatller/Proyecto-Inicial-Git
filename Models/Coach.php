@@ -35,21 +35,12 @@ class Coach extends Person
      * @param string $tactic La nueva táctica a implementar
      */
 
-    public function __construct(string $name, bool $active, string $tactic)
+    public function __construct( bool $active, string $tactic)
     {
-        $this->name = $name;
         $this->active = $active;
         $this->tactic = $tactic;
     }
-    /**
-     * Get Coach name
-     *
-     * @return  string
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
+    
     /**
      * Get Coach Status
      *
@@ -65,19 +56,7 @@ class Coach extends Person
         return $this->tactic;
     }
 
-    /**
-     * Set Coach name in string
-     *
-     * @param  string  $name is string
-     *
-     * @return  self
-     */
-    public function setName(string $name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
+    
     /**
      * Set status in bool
      *
