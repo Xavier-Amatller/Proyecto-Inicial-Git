@@ -1,1 +1,2 @@
-echo "Conflict";
+<?php
+echo"Generar conclito!";
