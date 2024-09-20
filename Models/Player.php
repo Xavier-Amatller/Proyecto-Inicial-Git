@@ -95,5 +95,6 @@ class Player extends Person
     public function passBall()
     {
         echo "Bola pasada";
+        
     }
 }
