@@ -1,3 +1,3 @@
 <?php 
   $sum1 = 1 + 1;
-  echo "suma: $sum1" ;
+  echo "SUMA: 1 + 1 = $sum1" ;
